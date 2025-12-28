@@ -1,1 +1,75 @@
-# WhatsApp-Bulk-Automation-System
+# 📲 WhatsApp Bulk Automation System (v1.0)
+
+A professional, web-based WhatsApp bulk messaging system built using **Python, Flask, and Selenium**, designed for controlled and safe bulk message delivery using WhatsApp Web.
+
+---
+
+## 🚀 Features
+
+- 📊 Excel-based bulk messaging
+- 👤 Personalized messages using `{name}` placeholders
+- ⏱️ Configurable delays (human-like behavior)
+- 🔁 Batch-wise message sending
+- ⏸️ Pause & ▶ Resume functionality
+- 📈 Live progress tracking dashboard
+- ❌ Invalid number detection
+- 🧾 Automatic success / failure logging
+- ♻️ Retry-ready architecture
+- 💾 Persistent WhatsApp session (QR scan only once)
+
+---
+
+## 🖥️ System Preview
+
+### Dashboard
+![Dashboard](screenshots/1.png)
+
+### Bulk Messaging Panel
+![Bulk Sender](screenshots/2.png)
+
+### Send History
+![History](screenshots/3.png)
+
+> 📌 *Screenshots are for reference. Actual UI may vary based on browser and screen size.*
+
+---
+
+## 🧰 Tech Stack
+
+- **Backend:** Python, Flask
+- **Automation:** Selenium (WhatsApp Web)
+- **Frontend:** HTML, Bootstrap 5
+- **Data Handling:** Pandas, Excel
+- **Browser:** Google Chrome
+
+---
+
+## 📂 Project Structure
+
+WhatsApp-Bulk-Automation-System/
+│── app.py
+│── requirements.txt
+│── state.json # runtime state (ignored in git)
+│── send_report.csv # auto-generated logs
+│
+├── templates/
+│ ├── base.html
+│ ├── bulk.html
+│ ├── dashboard.html
+│ └── history.html
+│
+├── uploads/ # runtime uploads (ignored)
+├── whatsapp_selenium_profile/ # WhatsApp session (ignored)
+└── README.md
+
+---
+
+## 📑 Excel Format
+
+The Excel file should contain the following columns:
+
+3️⃣ Run the Application
+python app.py
+
+4️⃣ Open in Browser
+http://127.0.0.1:5000
