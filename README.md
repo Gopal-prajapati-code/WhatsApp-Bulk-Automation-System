@@ -23,12 +23,15 @@ A professional, web-based WhatsApp bulk messaging system built using **Python, F
 
 ### Dashboard
 ![Dashboard](screenshots/1.png)
+<img width="1890" height="965" alt="image" src="https://github.com/user-attachments/assets/79bce87c-3ee5-4265-a542-2694192b4128" />
 
 ### Bulk Messaging Panel
 ![Bulk Sender](screenshots/2.png)
+<img width="1890" height="965" alt="image" src="https://github.com/user-attachments/assets/f8665ced-e33a-4299-ace5-603a6c06c382" />
 
 ### Send History
 ![History](screenshots/3.png)
+<img width="1877" height="832" alt="image" src="https://github.com/user-attachments/assets/63a56dc2-356a-403f-87a0-ce76fe9279ce" />
 
 > 📌 *Screenshots are for reference. Actual UI may vary based on browser and screen size.*
 
