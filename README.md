@@ -77,3 +77,122 @@ python app.py
 
 4️⃣ Open in Browser
 http://127.0.0.1:5000
+
+🧩 Chrome & ChromeDriver Installation Guide
+
+This project requires Google Chrome and ChromeDriver to be installed and correctly configured.
+
+1️⃣ Install Google Chrome
+
+If Google Chrome is not already installed, download it from the official website:
+
+🔗 Official Download Link
+https://www.google.com/chrome/
+
+After installation:
+
+Open Chrome
+
+Go to:
+
+chrome://settings/help
+
+
+Note the Chrome version number (example: 124.0.6367.xx)
+
+2️⃣ Download ChromeDriver (VERY IMPORTANT)
+
+ChromeDriver must match your installed Chrome version.
+
+🔗 Official ChromeDriver Download Page
+https://googlechromelabs.github.io/chrome-for-testing/
+
+Steps:
+
+Find your Chrome major version (example: 124)
+
+Download chromedriver-win64.zip (for Windows)
+
+Extract the ZIP file
+
+You will get chromedriver.exe
+
+3️⃣ Set ChromeDriver Path
+
+Move chromedriver.exe to a permanent location, for example:
+
+C:\Windows\chromedriver.exe
+
+
+You may choose another folder, but ensure the path is updated in app.py.
+
+4️⃣ Configure Paths in app.py
+
+Open app.py and update the following configuration section:
+
+# ================= CONFIG =================
+CHROMEDRIVER_PATH = r"C:\Windows\chromedriver.exe"
+USER_DATA_DIR = r"E:\Business client project\Whatsapp excel bulk project Web base\WhatsappWebApp\whatsapp_selenium_profile"
+
+Configuration Explanation
+Variable	Purpose
+CHROMEDRIVER_PATH	Full path to the ChromeDriver executable
+USER_DATA_DIR	Stores WhatsApp Web session (QR scan required only once)
+5️⃣ Verify ChromeDriver Installation (Optional but Recommended)
+
+Open Command Prompt and run:
+
+chromedriver --version
+
+
+Expected output example:
+
+ChromeDriver 124.0.xxxx.xx
+
+
+If command is not found, ensure:
+
+Correct file path
+
+ChromeDriver executable is accessible
+
+6️⃣ First-Time WhatsApp Login
+
+Start the application:
+
+python app.py
+
+
+Open browser:
+
+http://127.0.0.1:5000
+
+
+WhatsApp Web will open automatically
+
+Scan QR code using your phone
+
+Session will be saved in USER_DATA_DIR
+
+📌 No QR scan required again unless USER_DATA_DIR is deleted
+
+⚠️ Important Notes (Client Safety)
+
+Do NOT delete USER_DATA_DIR after login
+
+Do NOT share USER_DATA_DIR with anyone
+
+This folder is intentionally excluded from GitHub using .gitignore
+
+Chrome auto-update may require ChromeDriver update in future
+
+🛡️ Common Issues & Fixes
+Issue	Solution
+Chrome opens then closes	ChromeDriver version mismatch
+Session logged out	USER_DATA_DIR deleted
+QR appears every time	Wrong USER_DATA_DIR path
+Permission error	Run terminal as Administrator
+
+
+
+
