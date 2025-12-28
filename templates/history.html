@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h4>History</h4>
+<a href="/retry-failed" class="btn btn-danger mb-2">🔁 Retry FAILED</a>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Date</th><th>Time</th><th>Number</th><th>Message</th><th>Status</th>
+</tr>
+{% for r in rows %}
+<tr>
+<td>{{r[0]}}</td>
+<td>{{r[1]}}</td>
+<td>{{r[2]}}</td>
+<td>{{r[3]}}</td>
+<td>
+{% if r[4]=="SUCCESS" %}
+<span class="badge bg-success">SUCCESS</span>
+{% else %}
+<span class="badge bg-danger">FAILED</span>
+{% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

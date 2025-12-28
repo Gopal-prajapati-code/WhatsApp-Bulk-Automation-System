@@ -1,0 +1,10 @@
+# runtime / private
+state.json
+send_report.csv
+uploads/
+whatsapp_selenium_profile/
+
+# python
+__pycache__/
+*.pyc
+.env

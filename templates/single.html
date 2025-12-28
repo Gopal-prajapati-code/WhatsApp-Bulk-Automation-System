@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Single Send</h2>
+<form method="post">
+    <input name="name" placeholder="Name">
+    <input name="number" placeholder="Mobile Number" required>
+    <textarea name="message" placeholder="Message (use {name})" required></textarea>
+    <button>Send</button>
+</form>
+
+<p style="color:green;">{{ status }}</p>
+
+{% endblock %}
